@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+		font-display: 'Poppins';
+	margin: 0;
+	padding: 0;
+/*	box-sizing: border-box;*/
+}
+
+.login{
+	height: 100vh;
+	background-color: rgb(193, 190, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.login .card{
+	display: flex;
+	width: 50%;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	min-height: 600px;
+	overflow: hidden;
+}
+
+.login .card .left{
+flex: 1;
+background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://storage.googleapis.com/cms-storage-bucket/images/Flutter_F_4K_Wallpaper_1.width-500.png")
+          center;
+      background-size: cover;
+padding: 30px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+color: white;
+}
+
+.login .card .left h1{
+
+	font-size: 30px;
+	line-height: 30px;
+
+}
+
+.login .card .left p{
+font-size: 20px;
+}
+
+.login .card .left span{
+	font-size: 17px;
+	cursor: pointer;
+
+}
+
+/*.login .card .left button{
+	width: 50%;
+	padding: 10px;
+	border: none;
+	background-color: white;
+	color:rebeccapurple;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.login .card .left button:hover {
+	transform: scale(1.1);
+    background-color:rgba(39, 11, 96, 0.5);
+    color: white;
+}
+*/
+
+.login .card .right{
+	flex: 1;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.login .card .right h1{
+	font-size: 30px;
+	color:#555;
+
+}
+
+.login .card .right form{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+}
+
+
+.login .card .right form .nem{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+
+
+.login .card .right form .nem span{
+	font-size: 15px;
+	color: #555;
+
+}
+.login .card .right form .pass{
+	display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.login .card .right form .pass span{
+	font-size: 15px;
+	color: #555;
+	
+}
+
+
+
+.login .card .right form .nem input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 15px 10px;
+
+}
+
+
+.login .card .right form .pass input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 15px 10px;
+
+}
+
+.login .card .right form .checkbox checkbox{
+	display: flex;
+}
+
+.login .card .right form .checkbox  span{
+	font-size: 15px;
+	color: #555;
+
+}
+
+
+
+.login .card .right button{
+	width: 50%;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	background-color:#938eef;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+transition: transform 0.3s ease-in-out;
+}
+
+.login .card .right button:hover{
+	transform: scale(1.1);
+}
+
+
+.login .card .right form #error-msg{
+
+	transition: transform 0.3s ease-in-out;
+	font-weight: bold;
+	font-size: 20px;
+	color:darkred;
+
+}
+
+
+@media(max-width:960px){
+
+	
+.login .card{
+	display: flex;
+	width: 70%;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	min-height: 500px;
+	overflow: hidden;
+}
+
+
+
+.login .card .left{
+flex: 1;
+background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://storage.googleapis.com/cms-storage-bucket/images/Flutter_F_4K_Wallpaper_1.width-500.png")
+          center;
+background-size: cover;
+padding: 27px;
+display: flex;
+flex-direction: column;
+gap: 27px;
+color: white;
+}
+
+
+.login .card .left h1{
+
+	font-size: 27px;
+	line-height: 27px;
+
+}
+
+.login .card .left p{
+font-size: 18px;
+}
+
+.login .card .left span{
+	font-size: 17px;
+	cursor: pointer;
+
+}
+
+
+
+.login .card .right{
+	flex: 1;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.login .card .right h1{
+	font-size: 28px;
+	color:#555;
+
+}
+
+.login .card .right form{
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+
+}
+
+
+.login .card .right form .nem{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+
+
+.login .card .right form .nem span{
+	font-size: 13px;
+	color: #555;
+
+}
+.login .card .right form .pass{
+	display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.login .card .right form .pass span{
+	font-size: 13px;
+	color: #555;
+	
+}
+
+
+
+.login .card .right form .nem input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 13px 8px;
+
+}
+
+
+.login .card .right form .pass input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 13px 8px;
+
+}
+
+.login .card .right form .checkbox checkbox{
+	display: flex;
+}
+
+.login .card .right form .checkbox  span{
+	font-size: 13px;
+	color: #555;
+
+}
+
+
+
+.login .card .right button{
+	width: 70%;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	background-color:#938eef;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+transition: transform 0.3s ease-in-out;
+}
+
+.login .card .right button:hover{
+	transform: scale(1.1);
+}
+
+
+.login .card .right form #error-msg{
+
+	transition: transform 0.3s ease-in-out;
+	font-weight: bold;
+	font-size: 18px;
+	color:darkred;
+
+}
+
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+	
+.login .card{
+	display: flex;
+	width: 80%;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+
+
+.login .card .left{
+flex: 1;
+background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://storage.googleapis.com/cms-storage-bucket/images/Flutter_F_4K_Wallpaper_1.width-500.png")
+          center;
+background-size: cover;
+padding: 25px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+color: white;
+}
+
+
+.login .card .left h1{
+
+	font-size: 25px;
+	line-height: 25px;
+
+}
+
+.login .card .left p{
+font-size: 16px;
+}
+
+.login .card .left span{
+	font-size: 15px;
+	cursor: pointer;
+
+}
+
+
+
+
+.login .card .right{
+	flex: 1;
+	padding: 26px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.login .card .right h1{
+	font-size: 26px;
+	color:#555;
+
+}
+
+.login .card .right form{
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+
+}
+
+
+.login .card .right form .nem{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+
+
+.login .card .right form .nem span{
+	font-size: 11px;
+	color: #555;
+
+}
+.login .card .right form .pass{
+	display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.login .card .right form .pass span{
+	font-size: 11px;
+	color: #555;
+	
+}
+
+
+
+.login .card .right form .nem input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 11px 6px;
+
+}
+
+
+.login .card .right form .pass input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 11px 6px;
+
+}
+
+.login .card .right form .checkbox checkbox{
+	display: flex;
+}
+
+.login .card .right form .checkbox  span{
+	font-size: 13px;
+	color: #555;
+
+}
+
+
+
+.login .card .right button{
+	width: 80%;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	background-color:#938eef;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+transition: transform 0.3s ease-in-out;
+}
+
+.login .card .right button:hover{
+	transform: scale(1.1);
+}
+
+
+.login .card .right form #error-msg{
+
+	transition: transform 0.3s ease-in-out;
+	font-weight: bold;
+	font-size: 16px;
+	color:darkred;
+
+}
+
+
+
+
+
+}
+
+
+@media(max-width:480px){
+
+
+
+.login .card{
+	display: flex;
+	width: 90%;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+.login .card .left{
+flex: 1;
+background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://storage.googleapis.com/cms-storage-bucket/images/Flutter_F_4K_Wallpaper_1.width-500.png")
+          center;
+background-size: cover;
+padding: 23px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+color: white;
+}
+
+
+
+.login .card .left h1{
+
+	font-size: 21px;
+	line-height: 21px;
+
+}
+
+.login .card .left p{
+font-size: 12px;
+}
+
+.login .card .left span{
+	font-size: 12px;
+	cursor: pointer;
+
+}
+
+
+
+.login .card .right{
+	flex: 1;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.login .card .right h1{
+	font-size: 24px;
+	color:#555;
+
+}
+
+.login .card .right form{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+}
+
+
+.login .card .right form .nem{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+
+
+.login .card .right form .nem span{
+	font-size: 9px;
+	color: #555;
+
+}
+.login .card .right form .pass{
+	display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.login .card .right form .pass span{
+	font-size: 9px;
+	color: #555;
+	
+}
+
+
+
+.login .card .right form .nem input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 9px 4px;
+
+}
+
+
+.login .card .right form .pass input{
+	border: none;
+	border-bottom:  1px solid lightgrey;
+	border-radius: 4px;
+	padding: 9px 4px;
+
+}
+
+.login .card .right form .checkbox checkbox{
+	display: flex;
+}
+
+.login .card .right form .checkbox  span{
+	font-size: 11px;
+	color: #555;
+
+}
+
+
+
+.login .card .right button{
+	width: 90%;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	background-color:#938eef;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+transition: transform 0.3s ease-in-out;
+}
+
+.login .card .right button:hover{
+	transform: scale(1.1);
+}
+
+
+.login .card .right form #error-msg{
+
+	transition: transform 0.3s ease-in-out;
+	font-weight: bold;
+	font-size: 14px;
+	color:darkred;
+
+}
+
+
+
+
+}

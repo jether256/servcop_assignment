@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	</head>
+<body>
+
+	<div class="login">
+		<div class="card">
+
+			<div class="left">
+				<h1>Welcome to Flutter Teams</h1>
+				<p>Welcome to our collaborative Flutter web application! Plan, start, and manage projects seamlessly, assigning tasks with deadlines. Enjoy version control like GitHub and build Flutter APKs online, all in one place.</p>
+				<!-- <span>Do not have ann account?</span>
+				<button>Regsiter</button> -->
+			</div>
+
+			<div class="right">
+				<h1>Login</h1>
+				<form id="loginForm" onsubmit="return validateForm()">
+					
+					<div class="nem">
+					<span>Username</span>
+					<input type="text" name="username" id="username" >
+					</div>
+
+					<div class="pass">
+					<span>Password</span>
+					<input type="password" name="username" id="password">
+					</div>
+
+					<div class="checkbox">
+						<input type="checkbox" id="rememberMe"> <span>Remember Me</span>
+					</div>
+
+					<button type="submit">Login</button>
+
+					  <p id="error-msg"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>	<script src="assets/js/app.js"></script>

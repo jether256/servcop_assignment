@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CRUD App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-3">  
+    </div>
+    <div class="container my-6">
+
+        <h1 class="text-center">API POSTS</h1>
+       
+        <div id="post-list" class="row gy-2"></div>
+      
+        <nav>
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+        <!-- Create and Edit Modals -->
+        <!-- <div id="modals"></div> -->
+
+        <!-- Modal Structure for creating and editing posts -->
+            <div class="modal" id="postModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Create/Edit Post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="postForm">
+                                <input type="hidden" id="postId">
+                                <div class="mb-3">
+                                    <label for="postTitle" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="postTitle" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="postBody" class="form-label">Body</label>
+                                    <textarea class="form-control" id="postBody" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="container my-3">  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

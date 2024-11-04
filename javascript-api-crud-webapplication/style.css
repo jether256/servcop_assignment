@@ -1,0 +1,6 @@
+.card {
+    border-radius: 10px;
+}
+.pagination .page-link {
+    cursor: pointer;
+}
